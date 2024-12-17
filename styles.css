@@ -16,6 +16,7 @@ header {
 
 header h1 {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Contorno negro */
+    background-color: #4506f3a6;
 }
 
 header p {
@@ -128,5 +129,9 @@ footer a {
 }
 
 footer a:hover {
-    color: #ffd700; /* Un color dorado para el hover */
+    color: #ffc400; /* Un color dorado para el hover */
+}
+
+.estrellas {
+    color: #fac105;
 }
