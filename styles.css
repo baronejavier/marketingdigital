@@ -1,0 +1,137 @@
+:root { --primary: #2b6cb0; --secondary: #28a745; --accent: #f6ad55;}
+* {margin: 0;padding: 0;box-sizing: border-box;}
+body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;line-height: 1.6;color: #2d3748;}
+header {
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 1rem;
+    color: white;
+    text-align: center;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(img/digital.png);
+}
+
+header h1 {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Contorno negro */
+    background-color: #4506f3a6;
+}
+
+header p {
+color: #79005b;
+font-size: 1.5em; /* Ajusta el tamaño de la fuente según lo necesario */
+font-weight: 700; /* Negrita intensa */
+color: #ffffff; /* Color del texto */
+text-align: center; /* Centrar el texto */
+margin: 20px 0 10px; /* Espaciado superior e inferior */
+background-color: #f306b8ee; /* Fondo sólido detrás del texto */
+padding: 10px; /* Espaciado interno para mayor visibilidad */
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+    font-weight: 700; /* Negrita intensa */
+}
+.nav-button {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background: rgb(145, 0, 126)
+}
+.nav-button:hover {
+    background: rgb(119, 4, 90);
+    transform: translateY(-2px);
+}
+.hero {background-color: #bfc1c4;padding: 4rem 2rem;text-align: center; color:#79005b}
+.features {display: grid;grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));gap: 2rem;padding: 4rem 2rem;background: white;}
+.feature-card {padding: 2rem;border-radius: 10px;box-shadow: 0 4px 6px rgba(0,0,0,0.1);transition: transform 0.3s ease;}
+.feature-card:hover {transform: translateY(-5px);}
+.testimonials {background: #f7fafc;padding: 4rem 2rem;text-align: center;}
+.testimonial-grid {display: grid;grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));gap: 2rem;margin-top: 2rem;}
+.testimonial-card {background: white;padding: 2rem;border-radius: 10px;box-shadow: 0 2px 4px rgba(0,0,0,0.1);}
+.pricing {padding: 4rem 2rem;text-align: center;}
+.pricing h2 {
+    color: #79005b;
+    font-size: 1.5em; /* Ajusta el tamaño de la fuente según lo necesario */
+    font-weight: 700; /* Negrita intensa */
+    color: #ffffff; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    margin: 20px 0 10px; /* Espaciado superior e inferior */
+    background-color: #f306b8ee; /* Fondo sólido detrás del texto */
+    padding: 10px; /* Espaciado interno para mayor visibilidad */
+    }
+.price-card {background: white;padding: 2rem;border-radius: 10px;box-shadow: 0 4px 6px rgba(0,0,0,0.1);max-width: 400px;margin: 2rem auto;}
+.contact {background: #f7fafc;padding: 4rem 2rem;text-align: center;}
+.social-buttons {display: flex;justify-content: center;gap: 2rem;margin-top: 2rem;}
+.social-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+.social-button:hover {transform: translateY(-3px);}
+.instagram {background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C);}
+.tiktok {background: #000000;}
+.cta-button {color: rgb(255, 255, 255);background:#f306b8ee;display: inline-block;padding: 1rem 2rem;border-radius: 5px;text-decoration: none;font-weight: bold;transition: all 0.3s ease; margin: 10px;}
+.cta-button:hover {transform: scale(1.05);}
+.icon {font-size: 2.5rem;color: var(--primary);margin-bottom: 1rem;}
+.highlight {color: var(--primary);font-weight: bold;}
+.counter {font-size: 2rem;font-weight: bold;color: var(--primary);}
+.benefits {display: flex;flex-direction: column;gap: 0.5rem;margin: 1rem 0;}
+.guarantee {background: #ebf8ff;padding: 2rem;border-radius: 10px;margin: 2rem 0;}
+.timer {font-size: 1.5rem;font-weight: bold;color: var(--accent);margin: 1rem 0;}
+@keyframes pulse {0% {transform: scale(1);}50% {transform: scale(1.05);}100% {transform: scale(1);}}
+.pulse {animation: pulse 2s infinite;}
+.container {max-width: 1200px;margin: 0 auto;padding: 0 2rem;}
+@media (max-width: 768px) {
+    .features {grid-template-columns: 1fr;}
+    .testimonial-grid {grid-template-columns: 1fr;}
+    .nav-buttons {flex-direction: column;}
+    .social-buttons {flex-direction: column;}
+}
+
+footer {
+    background-color: #2b6cb0;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+footer a {
+    color: #f6ad55;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffc400; /* Un color dorado para el hover */
+}
+
+.estrellas {
+    color: #fac105;
+}
